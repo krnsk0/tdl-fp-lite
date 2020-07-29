@@ -39,7 +39,7 @@ describe('The map function', () => {
     expect(Array.isArray(map([], () => {}))).toBe(true);
   });
 
-  it('should apply the second argument, a function, to each element in the array, the first argument', () => {
+  it('should apply the second argument (a function) to each element in the array (the first argument), returning an array of the results', () => {
     const input = [1, 2, 3, 4, 5];
     const timesTwo = (x) => x * 2;
     expect(map(input, timesTwo)).toStrictEqual([2, 4, 6, 8, 10]);
